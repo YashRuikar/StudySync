@@ -127,7 +127,7 @@ body{
 }
 
 .main-section{
-    max-width: 1280px;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -225,6 +225,7 @@ body{
 @media screen and (min-width:768px) {
     .main-section{
         flex-direction: row;
+        padding-top: 2rem;
     }
     .content-left{
         width: 50%;
@@ -232,7 +233,7 @@ body{
     }
     .section-title{
         padding-left: 0;
-        font-size: 3.8rem;
+        font-size: 2.9rem;
     }
     .button-group{
         justify-content: start;
@@ -265,13 +266,14 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.6rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--light-gray);
     border: none;
     border-radius: 0.625rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.8rem 2.5rem;
+    margin-bottom: 3rem;
+    padding: 2.5rem 2.5rem;
+    padding: 0 auto;
 }
 
 .company-logo{
@@ -295,7 +297,7 @@ body{
         grid-template-columns: repeat(4, 1fr);
     }
     .company-title{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         font-weight: bold;
     }
 }
@@ -319,13 +321,13 @@ body{
 }
 
 .main-title{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
 .main-description{
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.97rem;
 }
 
 .feature-grid{
@@ -370,11 +372,12 @@ body{
 .feature-title{
     color: var(--background-color);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .feature-description{
     color: var(--background-color);
+    font-size: 0.9rem;
 }
 
 .feature-card:nth-child(1){
@@ -411,7 +414,7 @@ body{
     background-color: var(--background-color);
     padding: 2rem;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 80%;
 }
 
 .testimonial-content{
@@ -421,7 +424,7 @@ body{
 }
 
 .testimonial-title{
-    font-size: 1.87rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -437,7 +440,7 @@ body{
     border: 1px solid rgb(171, 163, 163);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.2rem;
+    padding: 0.7rem;
     gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
@@ -470,8 +473,8 @@ body{
 
 .newsletter-container{
     background-color: var(--background-color);
-    max-width: 1280px;
-    height: 40vh;
+    max-width: 80%;
+    height: 45vh;
     margin: 0 auto;
 }
 
@@ -521,7 +524,7 @@ body{
     }
 
     .newsletter-container{
-        padding: 2rem;
+        padding: 1.6rem;
     }
 }
 
@@ -589,7 +592,7 @@ body{
 
 @media screen and (min-width:640px) {
     .news-title{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -677,10 +680,10 @@ ul{
     font-size: 0.875rem;
 }
 
-.footer-link-list{
+.footer-links-list{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.1rem;
 }
 
 .footer-grid-heading{
@@ -700,10 +703,12 @@ ul{
     .footer{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .footer-top{
-        padding-left: 10rem;
+        /* padding-left: 10rem; */
+        margin-bottom: 2rem;
     }
 
     .footer-grid{
